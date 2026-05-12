@@ -24,11 +24,13 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #crticle {
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #item {
 	float: right;
@@ -40,14 +42,72 @@
 	height: 50px;
 	width: 1280px;
 }
+.textword {
+	font-family: "微軟正黑體";
+	font-size: 16px;
+	line-height: 22px;
+}
+.texttitle {
+	font-family: "微軟正黑體";
+	font-size: 24px;
+}
 </style><link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body>
+<body onload="MM_preloadImages('images/大溪2.jpg','images/牛肉麵2.jpg','images/壽司2.jpg')">
 <div id="Container">
-  <div id="header"><img src="images/blue2.jpg" width="1280" height="150" /></div>
-  <div id="crticle"> id "crticle" 的內容放在這裡</div>
+  <div id="header"><img src="images/blue2 .jpg" width="1280" height="150" /></div>
+  <div id="crticle">
+    <table width="962" height="1160" border="0">
+      <tr>
+        <td colspan="2" bgcolor="#0099FF"> <div align="center" class="texttitle">1.大溪老街</div></td>
+      </tr>
+      <tr>
+        <td width="463" height="152">   &nbsp;&nbsp; &nbsp; &nbsp;  <span class="textword">大溪老街週邊有大溪橋、李騰芳古宅、寺廟古蹟、武德殿文化古蹟及大溪木藝生態博物館等知名景點，當然更要品嚐老街上傳統的台灣古早味小吃、體驗台灣童玩，尤其是大溪豆干、月光餅、花生糖、豆花、碗粿、湯圓等，都是不容錯過的台灣道地美食！絕對是來到桃園，感受道地台灣味必去的景點之一！</span><br /></td>
+        <td width="489"><img src="images/大溪.jpg" name="p01" width="400" height="353" id="p01" onmouseover="MM_swapImage('p01','','images/大溪2.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#33CCFF"><div align="center" class="texttitle">2.永川牛肉麵</div></td>
+      </tr>
+      <tr>
+        <td height="349"><h2><span class="textword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 走過半世紀‧創始中壢新明~第一家「新明牛肉麵」創立於民國48年，創辦人廖清雲先生隨著國民政府來台，落地生根於中壢，為了彌補生活上所需，相邀同袍魏榮安先生，以簡單的麵攤於人口眾多的「豬埔仔」禽畜市場(現今的新明市場)搭起一間狹小、簡陋的鐵皮屋賣起了「第一家四川口味的牛肉麵」。 由於早期樸實的農業社會吃牛肉均為禁忌，因此麵攤並未掛牌營業，反倒是老饕們口耳相傳新明市場旁有一家好吃的牛肉麵攤，「新明牛肉麵」的名號因此傳開，幾十年來大家就只認那獨特的川辣香氣，這股香氣也帶領著新明牛肉麵，走過整整半個世紀。</span><br />
+        </h2></td>
+        <td><img src="images/牛肉麵.jpg" name="p02" width="438" height="333" id="p02" onmouseover="MM_swapImage('p02','','images/牛肉麵2.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#9999FF"><div align="center" class="texttitle">3.老賊壽司</div></td>
+      </tr>
+      <tr>
+        <td height="268" class="textword">&nbsp;&nbsp;&nbsp;&nbsp;桃園在地老字號「老賊壽司」成立於1998年，位於桃園市中正路大廟後方，以高CP值、超過30至40種多元花式壽司口味而聞名。老闆李成興因兒時外號「老垂」諧音被喚作「老賊」而得名。該店主打平價美味，從早餐時段即開始營業，是當地著名的熱門排隊美食。<span jsuid="KE9Smf_f" jsaction="rcuQ6b:&amp;KE9Smf_f|npT2md" jscontroller="udAs2b" data-sfc-root="c" data-wiz-uids="KE9Smf_g,KE9Smf_h" data-sfc-cb=""><span data-animation-atomic="" data-wiz-attrbind="class=KE9Smf_f/TKHnVd"><span aria-hidden="true"> </span></span></span></td>
+        <td><img src="images/壽司JPG.jpg" name="p03" width="467" height="335" id="p03" onmouseover="MM_swapImage('p03','','images/壽司2.jpg',1)" onmouseout="MM_swapImgRestore()" ></td>
+      </tr>
+    </table>
+  </div>
   <div id="item"><ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="main.html">電影介紹</a></li>
       <li><a href="food.html">探索美食</a></li>
@@ -56,12 +116,8 @@
       <li><a href="me.html">與我聯絡</a>      </li>
       <li><a href="index.html">回首頁</a></li>
     </ul></div>
-  <p>&nbsp;</p>
-  <ul>
-    <li></li>
-  </ul>
-    <div id="footer"> id "item" 的內容放在這裡</div>
+  <div id="footer"><img src="images/pp.jpg" width="1280" height="50" /></div>
   
-<img src="images/pp.jpg" width="1280" height="50" /></div>
+</div>
 </body>
 </html>
