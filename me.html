@@ -24,6 +24,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #crticle {
 	float: left;
@@ -40,14 +41,70 @@
 	height: 50px;
 	width: 1280px;
 }
-</style><link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+
+.form1 {
+	border-radius:5;
+	fonr-size:24px;
+	margin-top:30x;
+	margin-left:50px;
+}
+.button
+   {
+	border-radius:5;
+	fonr-size:24px;
+	 background:#FCC;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="Container">
   <div id="header"><img src="images/red.jpg" width="1280" height="150" /></div>
-  <div id="crticle"> id "crticle" 的內容放在這裡</div>
+  <div id="crticle">
+    <form id="form1" name="form1" method="post" action="" class="form1">
+      <p>姓名:
+        <input type="text" name="name" id="name" />
+      </p>
+      <p>性別:
+        <input type="radio" name="sex" id="radio" value="man" />
+      男
+      <input name="sex" type="radio" id="radio2" value="woman" checked="checked" class="form1"/>
+女</p>
+      <p>職業:
+        <select name="Career" id="Career">
+          <option>學生</option>
+          <option>商工</option>
+          <option>服務業</option>
+          <option>軍公教</option>
+        </select>
+      </p>
+      <p>回復時間(可複選):
+        <input name="time1" type="checkbox" id="time1" value="早上" />
+      早上
+      <input name="time2" type="checkbox" id="time2" value="中午" />
+      中午
+      <input type="checkbox" name="time3" id="time3" />
+      晚上</p>
+      <p>電子郵件:
+        <input type="text" name="email" id="email" />
+      </p>
+      <p>填寫日期:<lable for="dt"></lable>
+                <input type="date" name="dt" id="dt" />
+      </p>
+      <p>詢問內容:
+        <textarea name="question" id="question" cols="45" rows="5"></textarea>
+      </p>
+      <p>
+        <input type="submit" name="sumit" id="sumit" value="送出" class="button"/>
+        <input name="reset" type="reset" id="reset" value="重設" class="button"/>
+      </p>
+    </form>
+     <iframe src="test1.html" width="900" height="400" frameborder="0" scrolling="no"></iframe>
+    
+  </div>
   <div id="item"><ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="main.html">電影介紹</a></li>
       <li><a href="food.html">探索美食</a></li>
@@ -55,9 +112,8 @@
       <li><a href="new.html">關於我</a></li>
       <li><a href="me.html">與我聯絡</a>      </li>
       <li><a href="index.html">回首頁</a></li>
-    </ul></div>
-    <div id="footer"> id "item" 的內容放在這裡</div>
-  
-<img src="images/pp.jpg" width="1280" height="50" /></div>
+  </ul></div>
+  <div id="footer"><img src="images/pp.jpg" width="1280" height="50" /></div>
+</div>
 </body>
 </html>

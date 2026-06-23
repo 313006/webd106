@@ -29,6 +29,8 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	text-align: center;
+	overflow: auto;
 }
 #item {
 	float: right;
@@ -40,6 +42,13 @@
 	height: 50px;
 	width: 1280px;
 }
+#Container #crticle table tr td table tr td {
+	text-align: center;
+	font-size: 16px;
+}
+p {
+	font-size: 16px;
+}
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
@@ -48,21 +57,49 @@
 <body>
 <div id="Container">
   <div id="header"><img src="images/pink.jpg" width="1280" height="150" /></div>
-  <div id="crticle"> id "crticle" 的內容放在這裡</div>
+  <div id="crticle">
+    <table width="1002" height="601" border="1">
+    <tr>
+      <td><table width="1002" height="601" border="1">
+        <tr>
+          <td colspan="2">電影介紹|<a name="tall" id="tall"></a><strong><a href="#tall">電影大綱</a></strong></td>
+        </tr>
+        <tr>
+          <td colspan="2"><p> 《陽光女子合唱團》是一部溫暖感人的勵志電影，故事描述一群在女子監獄中的女性，因為成立合唱團而有了新的改變。她們原本來自不同背景，也各自背負人生傷痛，但在一次次練唱與相處中，逐漸學會互相支持與信任。透過音樂，她們重新找到自信與希望，也開始勇敢面對過去與未來。電影除了展現友情與親情，也傳達即使身處困境，只要不放棄，仍有重新開始的機會。</p></td>
+          </tr>
+        <tr>
+          <td colspan="2" bgcolor="#F9CCF7">電影介紹</td>
+          </tr>
+        <tr>
+          <td width="498"><a href="images/03-1-1568x1568.jpg"><img src="images/03-1-1568x1568.jpg" width="400" height="400" alt="123" /></a></td>
+          <td width="488">《陽光女子合唱團》是一部溫暖又感人的勵志電影，故事以女子監獄為背景，描述一群有著不同人生故事的女性，因緣際會組成合唱團，透過歌聲重新找回自我與希望。女主角在監獄中面對生活困境與對孩子的牽掛，與其他獄友從陌生、衝突到互相扶持，逐漸建立深厚情誼。她們藉由一次次練唱，不只學會團結合作，也勇敢面對過去的傷痛與人生遺憾。電影以音樂串起親情、友情與救贖，呈現即使身處逆境，人仍然有重新開始的機會。《陽光女子合唱團》除了帶來感動，也讓觀眾重新思考包容、愛與希望的意義，是一部笑中帶淚、充滿正能量的作品。</td>
+        </tr>
+        <tr>
+          <td colspan="2" bgcolor="#FBCCF2">電影大綱</td>
+          </tr>
+        <tr>
+          <td><p><a name="tall2" id="tall2"></a>陽光女子合唱團》是一部溫暖又感人的勵志電影，故事背景設定在女子監獄，描述一群有著不同故事與遭遇的女性，因為成立合唱團而開始改變自己的人生。原本彼此陌生、個性不同的她們，從一開始的不信任與衝突，到後來透過一次次的練習與相處，慢慢建立起深厚的友情與默契。音樂不僅成為她們抒發情緒的方法，也讓她們重新找到自信與希望。</p>
+            <p>電影中，每位角色都有自己的傷痛與遺憾，有人思念家人，有人對過去感到後悔，但在合唱團的陪伴下，她們逐漸學會面對內心的恐懼與不安，並勇敢迎接未來。這部電影除了展現音樂的力量，也傳達友情、親情、包容與重新開始的重要性。即使曾經犯錯，只要願意努力改變，每個人都還有重新出發的機會。整體劇情感人又富有意義，讓人看完後留下深刻印象。<a href="#tall">top</a></p></td>
+          <td><a href="images/123456.jpg"><img src="images/123456.jpg" width="400" height="267" /></a>
+           </td>
+        </tr>
+      </table></td>
+    </tr>
+    </table>
+  </div>
   <div id="item"> 
     <ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="main.html">電影介紹</a></li>
       <li><a href="food.html">探索美食</a></li>
       <li><a href="movie.html">發現新桃園</a></li>
       <li><a href="new.html">關於我</a></li>
-      <li><a href="me.html">與我聯絡</a>      </li>
+      <li><a href="me.html">與我聯絡</a>      </li> 
       <li><a href="index.html">回首頁</a></li>
     </ul>
   </div>
   
-<div id="footer"> id "item" 的內容放在這裡</div>
-  
-<img src="images/pp.jpg" width="1280" height="50" /></div>
+<div id="footer"><img src="images/pp.jpg" width="1280" height="50" /></div>
+</div>
 <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 </script>
